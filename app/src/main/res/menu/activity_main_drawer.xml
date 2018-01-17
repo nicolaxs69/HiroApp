@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_1"
+            android:icon="@drawable/ic_zonas"
+            android:title="Zonas Seguras" />
+            style="@style/Tiilium"
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@drawable/ic_mochila"
+            android:title="Mochila de emergencia"
+            style="@style/Tiilium"/>
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@drawable/ic_phone"
+            android:title="Teléfonos de emergencia"
+            style="@style/Tiilium"/>
+
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@drawable/ic_huella"
+            android:title="Mi perfil"
+            style="@style/Tiilium"/>
+
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_5"
+                    android:icon="@drawable/ic_engine"
+                    android:title="Configuracion"
+                    style="@style/Tiilium"/>/>
+                <item
+                    android:checkable="true"
+                    android:id="@+id/nav_6"
+                    android:icon="@drawable/ic_ldev"
+                    android:title="Acerca de"
+                    style="@style/Tiilium"/>/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

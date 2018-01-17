@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Hiro App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- About tab -->
+    <string name="about_developers_label">Main developers</string>
+    <string name="about_translator_label">Translator</string>
+    <string name="changelog">Changelog</string>
+    <string name="translator"></string>
+    <string name="about_version_label">Version</string>
+    <string name="about_source_label">Source code</string>
+    <string name="about_libraries_label">Mas informacion</string>
+
+    <!-- Navigation -->
+    <string name="nav_geometry">Geometry</string>
+    <string name="nav_about">Acerca de</string>
+    <string name="nav_reward">Mochila de emergencia </string>
+    <string name="nav_bank">Nearest Bank</string>
+    <string name="nav_tips">Recycler Tips</string>
+
+
+    <string name="details">Details</string>
+    <string name="version_app">1.0.0</string>
+    <string name="tips">
+        1. Pilah Sampah berdasarkan kategorinya organik / anorganik \n\n
+        2. Kreasikan sampah tersebut menjadi barang yang dapat digunakan kembali\n\n
+        3. Dan anda bisa promosikan atau menjual ke teman anda\n\n
+        4. Anda bisa saja mengirimkan sampah anda ke bank sampah terdekat melalui samita agar dapat diproses
+    </string>
+    <string name="layout">Layout</string>
+    <string name="deskripsi">A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs.</string>
+    <string name="nav_home">Zonas Seguras</string>
+    <string name="nav_home2">Teléfonos de emergencia</string>
+    <string name="nav_home3">Mi perfil</string>
+
+    <string name="aboutme">Hiro App beta Version 1.1.2</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="action_sign_in_short">Registro</string>
+    <string name="email">Email</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="dni">Dni</string>
+    <string name="distrito">Distrito</string>
+    <string name="minimum_password">Tu contraseña es debil, ingresa almenos 6 caracteres!</string>
+    <string name="auth_failed">Intento Fallido, verifica tu Email y Contraseña</string>
+    <string name="change_email">Cambiar Email</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remover Usuario</string>
+    <string name="new_pass">Nueva Contraseña</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Crear cuenta</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_name">Nombre Completo</string>
+    <string name="btn_login">INICIAR SESIÓN</string>
+    <string name="btn_link_to_register">Aun no tienes cuenta? Registrate!</string>
+    <string name="btn_link_to_login">Ya estoy registrado. Iniciar Sesión!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Recuperar contraseña</string>
+    <string name="btn_reset_password">Resetear Contraseña</string>
+    <string name="btn_back"><![CDATA[<< Atrás]]></string>
+    <string name="hint_new_email">Correo nuevo</string>
+    <string name="btn_change">Cambiar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_remove">Remover</string>
+    <string name="btn_sign_out">Cerrar Sesion</string>
+    <string name="lbl_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="forgot_password_msg">Ingresa tu correo para enviarte las instrucciones de reseteo de contraseña</string>
+
+    <string name="country_prompt">Elige tu Distrito</string>
+
+    <string-array name="country_arrays">
+        <item>Ate</item>
+        <item>Barranco</item>
+        <item>Breña</item>
+        <item>Comas</item>
+        <item>Chorrillos</item>
+        <item>El Agustino</item>
+        <item>Jesús María</item>
+        <item>La Molina</item>
+        <item>La Victoria</item>
+        <item>Lince</item>
+        <item>Breña</item>
+        <item>Miraflores</item>
+        <item>Pueblo Libre</item>
+        <item>Puente Piedra</item>
+        <item>Rimac</item>
+        <item>San Isidro</item>
+        <item>Independencia</item>
+        <item>San Luis</item>
+        <item>San Borja</item>
+        <item>Surquillo</item>
+
+    </string-array>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Entendido</string>
+
+    <string name="slide_1_title">RADAR</string>
+    <string name="slide_1_desc">Recibe notificaciones de emergencia ante desastres naturales en tiempo real.</string>
+
+    <string name="slide_2_title">RUTAS</string>
+    <string name="slide_2_desc">Encuentra las ruta de evacuación optimas hacia una zona segura definida por la Defensa Civil.</string>
+
+    <string name="slide_3_title">MI MOCHILA</string>
+    <string name="slide_3_desc">Encontrarás información de los elementos esenciales que debes tener en tu mochila de emergencia.</string>
+
+    <string name="slide_4_title">HOLA SOY DANA</string>
+    <string name="slide_4_desc">MIAU!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="description">(Tsunamis - Inundaciones - Huaycos)</string>
+
+</resources>

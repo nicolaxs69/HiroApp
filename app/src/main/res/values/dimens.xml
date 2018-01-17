@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <!-- Default Navigation Drawer. -->
+    <dimen name="nav_drawer_width">264dp</dimen>
+    <dimen name="floating_height">650dp</dimen>
+    <dimen name="floating_width">500dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">26dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="logo_w_h">50dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">220dp</dimen>
+    <dimen name="slide_title">35dp</dimen>
+    <dimen name="slide_desc">22dp</dimen>
+    <dimen name="slide_descripcion">17dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>
