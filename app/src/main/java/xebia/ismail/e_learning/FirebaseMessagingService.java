@@ -17,6 +17,7 @@ import android.widget.RemoteViews;
 
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Locale;
 import java.util.Map;
 
 
@@ -29,9 +30,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
 
-
         Map<String, String> data = remoteMessage.getData();
-
         //you can get your text message here.
         String message= data.get("text");
         String title = data.get("title");
@@ -65,14 +64,21 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     private void sendNotification(String title, String messageBody) {
 
-        Intent resul = new Intent(this, MainActivity.class);
+        String msg = String.format(Locale.getDefault(), "google.navigation:q=-12.097183,-77.032585");
+        // prepare intent to send to another app
+        Intent intentTraceRoute = new Intent(Intent.ACTION_VIEW);
+        intentTraceRoute.setData(Uri.parse(msg));
+        // send intent
+        //startActivity(intentTraceRoute);
+
+        //Intent resul = new Intent(this, MainActivity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         stackBuilder.addParentStack(MainActivity.class);
-        stackBuilder.addNextIntent(resul);
+        stackBuilder.addNextIntent(intentTraceRoute);
 
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_CANCEL_CURRENT);
 
-        Log.d("Intent", "sendNotification: "+resul.toString());
+        //Log.d("Intent", "sendNotification: "+resul.toString());
         Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         NotificationCompat.Builder mBuilder =

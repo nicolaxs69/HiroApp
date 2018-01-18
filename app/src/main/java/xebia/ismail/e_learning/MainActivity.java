@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
     public void switchFragment(int itemId) {
         mSelectedId = mNavigationView.getMenu().getItem(itemId).getItemId();
         mNavigationView.getMenu().findItem(mSelectedId).setChecked(true);
