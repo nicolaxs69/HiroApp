@@ -1,5 +1,6 @@
 package xebia.ismail.e_learning;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -21,13 +22,13 @@ import android.view.animation.Transformation;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import xebia.ismail.e_learning.fragment.HomeFragment;
 import xebia.ismail.e_learning.fragment.MapsActivity;
 import xebia.ismail.e_learning.fragment.TabProfile;
 import xebia.ismail.e_learning.fragment.VolumeFragment;
 
-/* Ismail Xebia */
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,11 +40,14 @@ public class MainActivity extends AppCompatActivity
     private NavigationView mNavigationView;
     private int mSelectedId;
     private Toolbar mToolbar;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awal);
+        mContext = getApplicationContext();
+        FirebaseMessaging.getInstance().subscribeToTopic("NEWYORK_WEATHER");
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -146,6 +150,7 @@ public class MainActivity extends AppCompatActivity
                 mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);
                 return;
         }
+
 
         final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(4));
 
