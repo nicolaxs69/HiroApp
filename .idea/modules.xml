@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hiro App.iml" filepath="$PROJECT_DIR$/Hiro App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HiroApp.iml" filepath="$PROJECT_DIR$/HiroApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
