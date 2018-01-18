@@ -5,7 +5,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Vibrator;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.text.Html;
@@ -71,6 +73,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_CANCEL_CURRENT);
 
         Log.d("Intent", "sendNotification: "+resul.toString());
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
@@ -79,10 +82,13 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
                         .setContentTitle("Alerta de Tsunami!")
                         .setContentText("Hiro App")
                         .setSound(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.alarm_1))
-                        .setDefaults(Notification.DEFAULT_SOUND)
-                        .setDefaults(Notification.DEFAULT_VIBRATE)
+                       // .setDefaults(Notification.DEFAULT_SOUND)
                         .setContentIntent(resultPendingIntent)
                         .setAutoCancel(true);
+                        long[] pattern = {0, 5000, 1000, 5000};
+                        mBuilder .setVibrate(pattern);
+                        mBuilder.setLights(Color.RED, 500, 1000);
+
 
         RemoteViews notificationView = getComplexNotificationView();
         notificationView.setOnClickPendingIntent(R.id.yes, resultPendingIntent);

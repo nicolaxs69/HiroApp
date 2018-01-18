@@ -1,19 +1,26 @@
 package xebia.ismail.e_learning;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.Manifest;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,12 +48,15 @@ public class MainActivity extends AppCompatActivity
     private int mSelectedId;
     private Toolbar mToolbar;
     private Context mContext;
+    private static String TAG = "PermissionDemo";
+    private static final int RECORD_REQUEST_CODE = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awal);
         mContext = getApplicationContext();
+
         FirebaseMessaging.getInstance().subscribeToTopic("NEWYORK_WEATHER");
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -98,7 +108,9 @@ public class MainActivity extends AppCompatActivity
             else
                 mDrawerLayout.closeDrawers();
         }
+
     }
+
 
     public void switchFragment(int itemId) {
         mSelectedId = mNavigationView.getMenu().getItem(itemId).getItemId();
