@@ -64,7 +64,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     private void sendNotification(String title, String messageBody) {
 
-        String msg = String.format(Locale.getDefault(), "google.navigation:q=-12.097183,-77.032585");
+        String msg = String.format(Locale.getDefault(), "google.navigation:q=-12.073743,-77.163599&mode=w");
         // prepare intent to send to another app
         Intent intentTraceRoute = new Intent(Intent.ACTION_VIEW);
         intentTraceRoute.setData(Uri.parse(msg));
