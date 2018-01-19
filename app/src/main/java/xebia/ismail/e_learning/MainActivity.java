@@ -31,6 +31,7 @@ import android.widget.LinearLayout;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import xebia.ismail.e_learning.fragment.ConfigurationProfile;
 import xebia.ismail.e_learning.fragment.HomeFragment;
 import xebia.ismail.e_learning.fragment.MapsActivity;
 import xebia.ismail.e_learning.fragment.TabProfile;
@@ -154,6 +155,13 @@ public class MainActivity extends AppCompatActivity
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home3);
                 navFragment = new TabProfile();
+                break;
+
+
+            case R.id.nav_5:
+                mPrevSelectedId = itemId;
+                setTitle(R.string.nav_home4);
+                navFragment = new ConfigurationProfile();
                 break;
 
             case R.id.nav_6:

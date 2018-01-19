@@ -36,6 +36,7 @@
     <string name="nav_home">Zonas Seguras</string>
     <string name="nav_home2">Teléfonos de emergencia</string>
     <string name="nav_home3">Mi perfil</string>
+    <string name="nav_home4">Configuración</string>
 
     <string name="aboutme">Hiro App beta Version 1.1.2</string>
     <string name="title_activity_maps">Map</string>
