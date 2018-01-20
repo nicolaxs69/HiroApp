@@ -78,26 +78,26 @@
     <string name="country_prompt">Elige tu Distrito</string>
 
     <string-array name="country_arrays">
-        <item>Ate</item>
-        <item>Barranco</item>
-        <item>Breña</item>
-        <item>Comas</item>
-        <item>Chorrillos</item>
-        <item>El Agustino</item>
-        <item>Jesús María</item>
-        <item>La Molina</item>
-        <item>La Victoria</item>
-        <item>Lince</item>
-        <item>Breña</item>
-        <item>Miraflores</item>
-        <item>Pueblo Libre</item>
-        <item>Puente Piedra</item>
-        <item>Rimac</item>
-        <item>San Isidro</item>
-        <item>Independencia</item>
-        <item>San Luis</item>
-        <item>San Borja</item>
-        <item>Surquillo</item>
+        <item>La punta</item>
+        <item>La perla (Callao)</item>
+        <!--<item>Barranco</item>-->
+        <!--<item>Breña</item>-->
+        <!--<item>Comas</item>-->        <!--<item>Chorrillos</item>-->
+        <!--<item>El Agustino</item>-->
+        <!--<item>Jesús María</item>-->
+        <!--<item>La Molina</item>-->
+        <!--<item>La Victoria</item>-->
+        <!--<item>Lince</item>-->
+        <!--<item>Breña</item>-->
+        <!--<item>Miraflores</item>-->
+        <!--<item>Pueblo Libre</item>-->
+        <!--<item>Puente Piedra</item>-->
+        <!--<item>Rimac</item>-->
+        <!--<item>San Isidro</item>-->
+        <!--<item>Independencia</item>-->
+        <!--<item>San Luis</item>-->
+        <!--<item>San Borja</item>-->
+        <!--<item>Surquillo</item>-->
 
     </string-array>
 
