@@ -29,6 +29,7 @@ import android.view.animation.Transformation;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import xebia.ismail.e_learning.fragment.ConfigurationProfile;
@@ -41,6 +42,8 @@ import xebia.ismail.e_learning.fragment.VolumeFragment;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    private FirebaseAnalytics mFirebaseAnalytics;
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
     private final Handler mDrawerHandler = new Handler();
     private DrawerLayout mDrawerLayout;
@@ -51,6 +54,9 @@ public class MainActivity extends AppCompatActivity
     private Context mContext;
     private static String TAG = "PermissionDemo";
     private static final int RECORD_REQUEST_CODE = 101;
+    private String id;
+    private String name;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_awal);
         mContext = getApplicationContext();
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         FirebaseMessaging.getInstance().subscribeToTopic("NEWYORK_WEATHER");
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -133,25 +140,37 @@ public class MainActivity extends AppCompatActivity
         switch (itemId) {
 
             case R.id.nav_1:
+                id = "1";
+                name = "Zonas Seguras";
+                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home);
                 navFragment = new MapsActivity();
-                //startActivity(new Intent(MainActivity.this, MapsActivity.class));
                 break;
 
                 case R.id.nav_2:
+                id = "2";
+                name = "Mochila de emergencia";
+                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_reward);
                 navFragment = new VolumeFragment();
                 break;
 
             case R.id.nav_3:
+                id = "3";
+                name = "telefonos de emergencia";
+                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home2);
                 navFragment = new HomeFragment();
+
                 break;
 
             case R.id.nav_4:
+                id = "3";
+                name = "Mi perfil";
+                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home3);
                 navFragment = new TabProfile();
@@ -197,6 +216,16 @@ public class MainActivity extends AppCompatActivity
             } catch (IllegalStateException ignored) {
             }
         }
+    }
+
+    private void AnalyticsEvent(String id, String name){
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "Abrio la actividad"+name);
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
     }
 
     public int dp(float value) {
