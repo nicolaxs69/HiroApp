@@ -5,13 +5,16 @@ package xebia.ismail.e_learning;
  * SplashActivity class which runs a timer to Intent to the MainActivity.
  */
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity  {
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 2000;  //2 Seconds
 
@@ -19,6 +22,8 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+
 
         new Handler().postDelayed(new Runnable() {
 
@@ -38,4 +43,6 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, SPLASH_TIME_OUT);
     }
+
+
 }

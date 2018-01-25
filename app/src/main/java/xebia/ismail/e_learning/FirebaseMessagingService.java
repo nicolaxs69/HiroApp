@@ -59,28 +59,28 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     @Override
     public void onDeletedMessages() {
-
     }
 
     private void sendNotification(String title, String messageBody) {
 
-        String msg = String.format(Locale.getDefault(), "google.navigation:q=-12.073743,-77.163599&mode=w");
+        String coordenada_evacuacion = String.format(Locale.getDefault(), "google.navigation:q=-12.073743,-77.163599&mode=w");
         // prepare intent to send to another app
         Intent intentTraceRoute = new Intent(Intent.ACTION_VIEW);
-        intentTraceRoute.setData(Uri.parse(msg));
+        intentTraceRoute.setData(Uri.parse(coordenada_evacuacion));
         // send intent
         //startActivity(intentTraceRoute);
 
+        //Al presionar EVACUAR
         //Intent resul = new Intent(this, MainActivity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         stackBuilder.addParentStack(MainActivity.class);
-        stackBuilder.addNextIntent(intentTraceRoute);
+        stackBuilder.addNextIntent(intentTraceRoute); // Aqui se pone el intente a donde se quiere mandar
 
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_CANCEL_CURRENT);
 
-        //Log.d("Intent", "sendNotification: "+resul.toString());
-        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
+
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         //.setSmallIcon(android.R.drawable.ic_dialog_alert)
@@ -97,7 +97,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
 
         RemoteViews notificationView = getComplexNotificationView();
-        notificationView.setOnClickPendingIntent(R.id.yes, resultPendingIntent);
+        notificationView.setOnClickPendingIntent(R.id.yes, resultPendingIntent); // ResultPendingIntent boton Evacuar
         mBuilder.setCustomBigContentView(notificationView);
 
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

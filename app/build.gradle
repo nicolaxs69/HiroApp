@@ -32,6 +32,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
+
     compile 'com.android.support:appcompat-v7:26.0.2'
     testCompile 'junit:junit:4.12'
     implementation 'com.android.support:design:26.0.2'
@@ -46,6 +47,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-auth:11.8.0'
     implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-config:11.8.0'
 
     compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
         transitive = true

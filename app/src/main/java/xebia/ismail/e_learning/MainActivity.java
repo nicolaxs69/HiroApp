@@ -27,6 +27,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -40,7 +41,7 @@ import xebia.ismail.e_learning.fragment.VolumeFragment;
 
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, UpdateHelper.OnUpdateCheckListener {
 
 
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -63,6 +64,12 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awal);
         mContext = getApplicationContext();
+
+        UpdateHelper.with(this)
+                .onUpdateCheck(this)
+                .check();
+        //Toast.makeText(MainActivity.this, "FUckkkkk", Toast.LENGTH_SHORT).show();
+
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         FirebaseMessaging.getInstance().subscribeToTopic("NEWYORK_WEATHER");
@@ -265,5 +272,26 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void onUpdateCheckListener(final String urlApp) {
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setTitle("Hay una nueva versión  disponible")
+                .setMessage("Por favor actualice a la nueva versión para continuar")
+                .setPositiveButton("ACTUALIZAR", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this, ""+urlApp, Toast.LENGTH_SHORT).show();
+                    }
+                }).setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                    }
+                }).create();
+        alertDialog.show();
+
     }
 }

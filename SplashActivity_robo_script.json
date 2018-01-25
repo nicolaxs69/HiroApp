@@ -1,16 +1,16 @@
 [
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406590311,
+    "timestamp": 1516576345092,
     "actionCode": -1,
-    "delayTime": 3596989,
+    "delayTime": 3597806,
     "canScrollTo": false,
     "elementDescriptors": []
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406596638,
-    "replacementText": "Saltar",
+    "timestamp": 1516576360262,
+    "replacementText": "Siguiente",
     "actionCode": -1,
     "delayTime": 0,
     "canScrollTo": false,
@@ -19,10 +19,121 @@
         "className": "android.support.v7.widget.AppCompatButton",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 4,
-        "resourceId": "com.test.android:id/btn_skip",
+        "groupViewChildPosition": 3,
+        "resourceId": "com.test.android:id/btn_next",
         "contentDescription": "",
-        "text": "Saltar"
+        "text": "Siguiente"
+      },
+      {
+        "className": "android.widget.RelativeLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.ContentFrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "android:id/content",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_SWIPED",
+    "timestamp": 1516576373661,
+    "actionCode": -1,
+    "swipeDirection": "Left",
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v4.view.ViewPager",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/view_pager",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.RelativeLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.ContentFrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "android:id/content",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576379029,
+    "replacementText": "Siguiente",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 3,
+        "resourceId": "com.test.android:id/btn_next",
+        "contentDescription": "",
+        "text": "Siguiente"
+      },
+      {
+        "className": "android.widget.RelativeLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.ContentFrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "android:id/content",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_SWIPED",
+    "timestamp": 1516576383650,
+    "actionCode": -1,
+    "swipeDirection": "Left",
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v4.view.ViewPager",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/view_pager",
+        "contentDescription": "",
+        "text": ""
       },
       {
         "className": "android.widget.RelativeLayout",
@@ -46,52 +157,7 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406601386,
-    "actionCode": -1,
-    "delayTime": 3592170,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406601465,
-    "replacementText": "Saltar",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 4,
-        "resourceId": "com.test.android:id/btn_skip",
-        "contentDescription": "",
-        "text": "Saltar"
-      },
-      {
-        "className": "android.widget.RelativeLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.ContentFrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "android:id/content",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406605201,
+    "timestamp": 1516576387921,
     "actionCode": -1,
     "delayTime": 60000,
     "canScrollTo": false,
@@ -99,8 +165,8 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406612320,
-    "replacementText": "Recuperar contraseña",
+    "timestamp": 1516576388093,
+    "replacementText": "Entendido",
     "actionCode": -1,
     "delayTime": 0,
     "canScrollTo": false,
@@ -110,12 +176,12 @@
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
         "groupViewChildPosition": 3,
-        "resourceId": "com.test.android:id/btn_reset_password",
+        "resourceId": "com.test.android:id/btn_next",
         "contentDescription": "",
-        "text": "Recuperar contraseña"
+        "text": "Entendido"
       },
       {
-        "className": "android.widget.LinearLayout",
+        "className": "android.widget.RelativeLayout",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
         "groupViewChildPosition": 0,
@@ -124,311 +190,28 @@
         "text": ""
       },
       {
-        "className": "android.support.design.widget.CoordinatorLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406614320,
-    "actionCode": -1,
-    "delayTime": 3591964,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "PRESSED_BACK",
-    "timestamp": 1516406618485,
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406618549,
-    "actionCode": -1,
-    "delayTime": 3596208,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406620665,
-    "replacementText": "Aun no tienes cuenta? Registrate!",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 5,
-        "resourceId": "com.test.android:id/btn_signup",
-        "contentDescription": "",
-        "text": "Aun no tienes cuenta? Registrate!"
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.CoordinatorLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406622825,
-    "actionCode": -1,
-    "delayTime": 3595809,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406626198,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatEditText",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/nombre",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.FrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406631278,
-    "replacementText": "cris",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatEditText",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/nombre",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.FrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406643657,
-    "replacementText": "352668555",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatEditText",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/telefono",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.FrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
+        "className": "android.support.v7.widget.ContentFrameLayout",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
         "groupViewChildPosition": 1,
-        "resourceId": "",
+        "resourceId": "android:id/content",
         "contentDescription": "",
         "text": ""
       }
     ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576390808,
+    "actionCode": -1,
+    "delayTime": 3561768,
+    "canScrollTo": false,
+    "elementDescriptors": []
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406663391,
+    "timestamp": 1516576397717,
     "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatSpinner",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 2,
-        "resourceId": "com.test.android:id/spinner1",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 2,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "LIST_ITEM_CLICKED",
-    "timestamp": 1516406667614,
-    "replacementText": "La perla (Callao)",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatTextView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": 1,
-        "groupViewChildPosition": -1,
-        "resourceId": "android:id/text1",
-        "contentDescription": "",
-        "text": "La perla (Callao)"
-      },
-      {
-        "className": "android.widget.ListPopupWindow$DropDownListView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.PopupWindow$PopupBackgroundView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406674398,
-    "replacementText": "3",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatEditText",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/dni",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.FrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 3,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406680804,
-    "replacementText": "cris@gmail.com",
     "actionCode": -1,
     "delayTime": 0,
     "canScrollTo": false,
@@ -455,7 +238,44 @@
         "className": "android.support.design.widget.TextInputLayout",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 4,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_TEXT_CHANGED",
+    "timestamp": 1516576404789,
+    "replacementText": "nicoescobar69@gmail.com",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/email",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
         "resourceId": "",
         "contentDescription": "",
         "text": ""
@@ -464,24 +284,16 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406719102,
+    "timestamp": 1516576509711,
     "actionCode": -1,
-    "delayTime": 3504475,
+    "delayTime": 3483491,
     "canScrollTo": false,
     "elementDescriptors": []
   },
   {
-    "eventType": "PRESSED_BACK",
-    "timestamp": 1516406723764,
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406730424,
-    "replacementText": "123",
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576510113,
+    "replacementText": "nicoescobar69@gmail.com",
     "actionCode": -1,
     "delayTime": 0,
     "canScrollTo": false,
@@ -491,9 +303,9 @@
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
         "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/password",
+        "resourceId": "com.test.android:id/email",
         "contentDescription": "",
-        "text": ""
+        "text": "nicoescobar69@gmail.com"
       },
       {
         "className": "android.widget.FrameLayout",
@@ -508,52 +320,7 @@
         "className": "android.support.design.widget.TextInputLayout",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 5,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "PRESSED_BACK",
-    "timestamp": 1516406736884,
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_TEXT_CHANGED",
-    "timestamp": 1516406736913,
-    "replacementText": "123456",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatEditText",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/password",
-        "contentDescription": "",
-        "text": "123"
-      },
-      {
-        "className": "android.widget.FrameLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.TextInputLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 5,
+        "groupViewChildPosition": 1,
         "resourceId": "",
         "contentDescription": "",
         "text": ""
@@ -562,8 +329,291 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406745772,
-    "replacementText": "Registro",
+    "timestamp": 1516576514973,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576519197,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576523888,
+    "actionCode": -1,
+    "delayTime": 5000,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_TEXT_CHANGED",
+    "timestamp": 1516576524183,
+    "replacementText": "leg",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576537196,
+    "replacementText": "leg",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": "leg"
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_TEXT_CHANGED",
+    "timestamp": 1516576541394,
+    "replacementText": "legolas",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": "leg"
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576556768,
+    "actionCode": -1,
+    "delayTime": 3553384,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576560476,
+    "replacementText": "legolas",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": "legolas"
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_TEXT_CHANGED",
+    "timestamp": 1516576567506,
+    "replacementText": "legolas4129",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatEditText",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/password",
+        "contentDescription": "",
+        "text": "legolas"
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TextInputLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "PRESSED_BACK",
+    "timestamp": 1516576586430,
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576587837,
+    "replacementText": "INICIAR SESIÓN",
     "actionCode": -1,
     "delayTime": 0,
     "canScrollTo": false,
@@ -572,10 +622,10 @@
         "className": "android.support.v7.widget.AppCompatButton",
         "recyclerViewChildPosition": -1,
         "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 6,
-        "resourceId": "com.test.android:id/sign_up_button",
+        "groupViewChildPosition": 4,
+        "resourceId": "com.test.android:id/btn_login",
         "contentDescription": "",
-        "text": "Registro"
+        "text": "INICIAR SESIÓN"
       },
       {
         "className": "android.widget.LinearLayout",
@@ -599,60 +649,15 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406752235,
+    "timestamp": 1516576593842,
     "actionCode": -1,
-    "delayTime": 3568995,
+    "delayTime": 3564500,
     "canScrollTo": false,
     "elementDescriptors": []
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406762929,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Open navigation drawer",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406772366,
-    "actionCode": -1,
-    "delayTime": 5000,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406779640,
+    "timestamp": 1516576614445,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -689,81 +694,7 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406781478,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Open navigation drawer",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406784753,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Open navigation drawer",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406788280,
+    "timestamp": 1516576621120,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -800,15 +731,15 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406790591,
+    "timestamp": 1516576623533,
     "actionCode": -1,
-    "delayTime": 250,
+    "delayTime": 60000,
     "canScrollTo": false,
     "elementDescriptors": []
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406796295,
+    "timestamp": 1516576627931,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -845,7 +776,7 @@
   },
   {
     "eventType": "VIEW_SWIPED",
-    "timestamp": 1516406799213,
+    "timestamp": 1516576631240,
     "actionCode": -1,
     "swipeDirection": "Left",
     "delayTime": 0,
@@ -882,7 +813,7 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406802647,
+    "timestamp": 1516576636769,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -919,7 +850,7 @@
   },
   {
     "eventType": "VIEW_SWIPED",
-    "timestamp": 1516406805310,
+    "timestamp": 1516576639663,
     "actionCode": -1,
     "swipeDirection": "Left",
     "delayTime": 0,
@@ -956,7 +887,81 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406810401,
+    "timestamp": 1516576655109,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.design.widget.TabLayout$TabView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TabLayout$SlidingTabStrip",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.TabLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/tab_layout",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_SWIPED",
+    "timestamp": 1516576657725,
+    "actionCode": -1,
+    "swipeDirection": "Left",
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v4.view.ViewPager",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/pager",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.RelativeLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.FrameLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/content_frame",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576666168,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -993,7 +998,7 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406814175,
+    "timestamp": 1516576675882,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -1030,15 +1035,15 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406816296,
+    "timestamp": 1516576678057,
     "actionCode": -1,
-    "delayTime": 250,
+    "delayTime": 60000,
     "canScrollTo": false,
     "elementDescriptors": []
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406820726,
+    "timestamp": 1516576681085,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -1075,216 +1080,7 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406825301,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.design.internal.NavigationMenuItemView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 4,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.internal.NavigationMenuView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/design_navigation_view",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.NavigationView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "com.test.android:id/navigation_view",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406827402,
-    "actionCode": -1,
-    "delayTime": 250,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406833203,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Open navigation drawer",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406837505,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.design.internal.NavigationMenuItemView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 8,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.internal.NavigationMenuView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/design_navigation_view",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.support.design.widget.NavigationView",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "com.test.android:id/navigation_view",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406839900,
-    "actionCode": -1,
-    "delayTime": 3512414,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406844427,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Navigate up",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406846205,
-    "actionCode": -1,
-    "delayTime": 3595158,
-    "canScrollTo": false,
-    "elementDescriptors": []
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406847422,
-    "replacementText": "",
-    "actionCode": -1,
-    "delayTime": 0,
-    "canScrollTo": false,
-    "elementDescriptors": [
-      {
-        "className": "android.support.v7.widget.AppCompatImageButton",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 1,
-        "resourceId": "",
-        "contentDescription": "Open navigation drawer",
-        "text": ""
-      },
-      {
-        "className": "android.support.v7.widget.Toolbar",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "com.test.android:id/toolbar",
-        "contentDescription": "",
-        "text": ""
-      },
-      {
-        "className": "android.widget.LinearLayout",
-        "recyclerViewChildPosition": -1,
-        "adapterViewChildPosition": -1,
-        "groupViewChildPosition": 0,
-        "resourceId": "",
-        "contentDescription": "",
-        "text": ""
-      }
-    ]
-  },
-  {
-    "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406850927,
+    "timestamp": 1516576686231,
     "replacementText": "",
     "actionCode": -1,
     "delayTime": 0,
@@ -1321,7 +1117,7 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406853036,
+    "timestamp": 1516576688763,
     "actionCode": -1,
     "delayTime": 250,
     "canScrollTo": false,
@@ -1329,7 +1125,380 @@
   },
   {
     "eventType": "VIEW_CLICKED",
-    "timestamp": 1516406855679,
+    "timestamp": 1516576690776,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatImageButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "Open navigation drawer",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.Toolbar",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/toolbar",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.LinearLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576700588,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.design.internal.NavigationMenuItemView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 8,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.internal.NavigationMenuView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/design_navigation_view",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.NavigationView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/navigation_view",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576702902,
+    "actionCode": -1,
+    "delayTime": 3490842,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576709286,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatImageButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "Navigate up",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.Toolbar",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/toolbar",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.LinearLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576711148,
+    "actionCode": -1,
+    "delayTime": 3593160,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576714275,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatImageButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "Open navigation drawer",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.Toolbar",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/toolbar",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.LinearLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576718224,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.design.internal.NavigationMenuItemView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 2,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.internal.NavigationMenuView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/design_navigation_view",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.NavigationView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/navigation_view",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576720438,
+    "actionCode": -1,
+    "delayTime": 3564455,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576776096,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatImageButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "Open navigation drawer",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.Toolbar",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/toolbar",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.LinearLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576786813,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.design.internal.NavigationMenuItemView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 4,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.internal.NavigationMenuView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/design_navigation_view",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.NavigationView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/navigation_view",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576789011,
+    "actionCode": -1,
+    "delayTime": 60000,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576790687,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.v7.widget.AppCompatImageButton",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "",
+        "contentDescription": "Open navigation drawer",
+        "text": ""
+      },
+      {
+        "className": "android.support.v7.widget.Toolbar",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/toolbar",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.widget.LinearLayout",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576796239,
+    "replacementText": "",
+    "actionCode": -1,
+    "delayTime": 0,
+    "canScrollTo": false,
+    "elementDescriptors": [
+      {
+        "className": "android.support.design.internal.NavigationMenuItemView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 7,
+        "resourceId": "",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.internal.NavigationMenuView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 0,
+        "resourceId": "com.test.android:id/design_navigation_view",
+        "contentDescription": "",
+        "text": ""
+      },
+      {
+        "className": "android.support.design.widget.NavigationView",
+        "recyclerViewChildPosition": -1,
+        "adapterViewChildPosition": -1,
+        "groupViewChildPosition": 1,
+        "resourceId": "com.test.android:id/navigation_view",
+        "contentDescription": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "eventType": "DELAYED_MESSAGE_POSTED",
+    "timestamp": 1516576798421,
+    "actionCode": -1,
+    "delayTime": 3546265,
+    "canScrollTo": false,
+    "elementDescriptors": []
+  },
+  {
+    "eventType": "VIEW_CLICKED",
+    "timestamp": 1516576880790,
     "replacementText": "Cerrar Sesion",
     "actionCode": -1,
     "delayTime": 0,
@@ -1366,9 +1535,9 @@
   },
   {
     "eventType": "DELAYED_MESSAGE_POSTED",
-    "timestamp": 1516406857848,
+    "timestamp": 1516576883438,
     "actionCode": -1,
-    "delayTime": 3588559,
+    "delayTime": 3596832,
     "canScrollTo": false,
     "elementDescriptors": []
   }
