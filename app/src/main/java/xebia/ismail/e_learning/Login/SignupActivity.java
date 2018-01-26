@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,10 @@ import com.google.firebase.database.ServerValue;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import xebia.ismail.e_learning.MainActivity;
+import xebia.ismail.e_learning.Classes.User;
+import xebia.ismail.e_learning.R;
 
 public class SignupActivity extends AppCompatActivity {
 

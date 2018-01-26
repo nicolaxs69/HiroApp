@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import xebia.ismail.e_learning.MainActivity;
+import xebia.ismail.e_learning.R;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Classes;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

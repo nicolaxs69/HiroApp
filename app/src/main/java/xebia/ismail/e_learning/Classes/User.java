@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Classes;
 
 /**
  * Created by horror on 12/14/16.

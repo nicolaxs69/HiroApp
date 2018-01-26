@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Classes;
 
 import android.view.View;
 import android.widget.AdapterView;

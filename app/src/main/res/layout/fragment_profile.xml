@@ -75,7 +75,8 @@
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"
+            tools:ignore="InvalidImeActionId" />
 
         <Button
             android:id="@+id/changeEmail"

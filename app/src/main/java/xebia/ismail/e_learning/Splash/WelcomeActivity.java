@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Splash;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import xebia.ismail.e_learning.Login.LoginActivity;
+import xebia.ismail.e_learning.Login.Session;
+import xebia.ismail.e_learning.R;
 
 /**
  * Created by Akshay Raj on 7/28/2016.

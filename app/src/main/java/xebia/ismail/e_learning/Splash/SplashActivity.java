@@ -1,17 +1,14 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Splash;
 
 /**
  * Created by Nicolas on 25/05/2017.
  * SplashActivity class which runs a timer to Intent to the MainActivity.
  */
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 
 public class SplashActivity extends AppCompatActivity  {

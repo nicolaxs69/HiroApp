@@ -17,7 +17,6 @@
             android:layout_marginBottom="50dp"
             android:layout_marginStart="95dp"
             android:layout_marginTop="100dp"
-            android:fontFamily="@font/titillium_web_bold"
             android:text="@string/slide_1_title"
             android:textColor="@android:color/black"
             android:textSize="@dimen/slide_title"
@@ -35,14 +34,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:fontFamily="@font/titillium_web_bold"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/slide_1_desc"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="@dimen/slide_desc" />
-
 
     </LinearLayout>
 
@@ -56,7 +53,6 @@
         android:layout_marginTop="10dp"
         android:textColor="@android:color/darker_gray"
         android:text="@string/description"
-        android:fontFamily="@font/titillium_web_bold"
         android:textSize="@dimen/slide_descripcion"/>
 
 </RelativeLayout>

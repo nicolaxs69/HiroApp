@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning;
+package xebia.ismail.e_learning.Classes;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
@@ -9,6 +9,8 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import xebia.ismail.e_learning.Classes.UpdateHelper;
 
 /**
  * Created by Nicolas on 21/01/2018.
