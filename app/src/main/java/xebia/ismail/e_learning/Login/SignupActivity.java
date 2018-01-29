@@ -155,14 +155,14 @@ public class SignupActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                                Toast.makeText(SignupActivity.this, "Usuario creado!" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignupActivity.this, "Usuario creado!", Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
 
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(SignupActivity.this, "No se pudo crear el usuario...." + task.getException(),
+                                    Toast.makeText(SignupActivity.this, "No se pudo crear el usuario",
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new Intent(SignupActivity.this, MainActivity.class));
