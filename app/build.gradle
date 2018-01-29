@@ -10,9 +10,9 @@ android {
         applicationId "com.HiroApp.android"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 3
+        versionCode 4
         multiDexEnabled true
-        versionName "2.0.1"
+        versionName "2.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 //        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
     }
