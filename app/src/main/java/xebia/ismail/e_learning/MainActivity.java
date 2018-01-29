@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity
 
 
     private FirebaseAnalytics mFirebaseAnalytics;
-    private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
-    private final Handler mDrawerHandler = new Handler();
+    private  final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
+    private  Handler mDrawerHandler = new Handler();
     private DrawerLayout mDrawerLayout;
     private int mPrevSelectedId;
     private NavigationView mNavigationView;
@@ -88,32 +88,32 @@ public class MainActivity extends AppCompatActivity
     private Context mContext;
     private String id;
     private String name;
-    private static final int MY_PERMISSIONS_REQUEST_FINE_LOCATION = 111;
+    private final int MY_PERMISSIONS_REQUEST_FINE_LOCATION = 111;
     private GoogleApiClient mGoogleApiClient;
             private LocationRequest mLocationRequest;
     private LocationListener listener;
     private LatLng currentLatLng;
     public static Handler handlerDatos;
 
-    private static final LatLng punto1 = new LatLng(-12.072941, -77.165595);
-    private static final LatLng punto2 = new LatLng(-12.072201, -77.164656);
-    private static final LatLng punto3 = new LatLng(-12.071755, -77.164603);
-    private static final LatLng punto4 = new LatLng(-12.072967, -77.163589);
-    private static final LatLng punto5 = new LatLng(-12.073743, -77.163599);
-    private static final LatLng punto6 = new LatLng(-12.073198, -77.162178);
-    private static final LatLng punto7 = new LatLng(-12.073040, -77.162328);
-    private static final LatLng punto8 = new LatLng(-12.071897, -77.162151);
-    private static final LatLng punto9 = new LatLng(-12.071398, -77.162210);
-    private static final LatLng punto10 = new LatLng(-12.070365, -77.163127);
-    private static final LatLng punto11 = new LatLng(-12.069667, -77.163122);
-    private static final LatLng punto12 = new LatLng(-12.069290, -77.162366);
-    private static final LatLng punto13 = new LatLng(-12.069164, -77.162028);
-    private static final LatLng punto14 = new LatLng(-12.070407, -77.161894);
-    private static final LatLng punto15 = new LatLng(-12.069961, -77.161153);
-    private static final LatLng punto16 = new LatLng(-12.069562, -77.160681);
-    private static final LatLng punto17 = new LatLng(-12.068419, -77.160091);
-    private static final LatLng punto18 = new LatLng(-12.068980, -77.158611);
-    private static final LatLng punto19 = new LatLng(-12.073045, -77.167928);
+    private  final LatLng punto1 = new LatLng(-12.072941, -77.165595);
+    private  final LatLng punto2 = new LatLng(-12.072201, -77.164656);
+    private  final LatLng punto3 = new LatLng(-12.071755, -77.164603);
+    private  final LatLng punto4 = new LatLng(-12.072967, -77.163589);
+    private  final LatLng punto5 = new LatLng(-12.073743, -77.163599);
+    private  final LatLng punto6 = new LatLng(-12.073198, -77.162178);
+    private  final LatLng punto7 = new LatLng(-12.073040, -77.162328);
+    private  final LatLng punto8 = new LatLng(-12.071897, -77.162151);
+    private  final LatLng punto9 = new LatLng(-12.071398, -77.162210);
+    private  final LatLng punto10 = new LatLng(-12.070365, -77.163127);
+    private  final LatLng punto11 = new LatLng(-12.069667, -77.163122);
+    private  final LatLng punto12 = new LatLng(-12.069290, -77.162366);
+    private  final LatLng punto13 = new LatLng(-12.069164, -77.162028);
+    private  final LatLng punto14 = new LatLng(-12.070407, -77.161894);
+    private  final LatLng punto15 = new LatLng(-12.069961, -77.161153);
+    private  final LatLng punto16 = new LatLng(-12.069562, -77.160681);
+    private  final LatLng punto17 = new LatLng(-12.068419, -77.160091);
+    private  final LatLng punto18 = new LatLng(-12.068980, -77.158611);
+    private  final LatLng punto19 = new LatLng(-12.073045, -77.167928);
 
     List<Ubicacion> ubicaciones = new ArrayList<>();
     Ubicacion ubicacion = new Ubicacion();

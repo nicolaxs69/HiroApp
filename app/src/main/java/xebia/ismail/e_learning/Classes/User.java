@@ -10,13 +10,13 @@ public class User {
     private String distrito;
     private String email;
     private String password;
-    private double telefono;
-    private double dni;
+    private String telefono;
+    private String dni;
     private String date;
 
 
 
-    public User(String n, String c, double w, double d, String e, String p, String da) {
+    public User(String n, String c, String w, String d, String e, String p, String da) {
 
         this.name = n;
         this.distrito = c;
@@ -35,11 +35,11 @@ public class User {
         return distrito;
     }
 
-    public double getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public double getDni() {
+    public String getDni() {
         return dni;
     }
 

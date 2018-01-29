@@ -39,7 +39,8 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     DatabaseReference databaseReference;
     public String nombre, password, distrito, email;
-    public double telefono, dni;
+    public String telefono;
+    public String dni;
     static String var;
 
 
@@ -109,19 +110,38 @@ public class SignupActivity extends AppCompatActivity {
                 email = inputEmail.getText().toString().trim();
                 password = inputPassword.getText().toString().trim();
                 nombre = inputNombre.getText().toString().trim();
-                telefono = Double.parseDouble(inputTelefono.getText().toString().trim());
+                telefono = inputTelefono.getText().toString().trim();
                 distrito = var;
-                dni = Double.parseDouble(inputDni.getText().toString().trim());
+                dni = inputDni.getText().toString().trim();
+
+                if (TextUtils.isEmpty(nombre)) {
+                    Toast.makeText(getApplicationContext(), "Por favor complete los campos de texto!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
+                if (TextUtils.isEmpty(telefono)) {
+                    Toast.makeText(getApplicationContext(), "Por favor complete los campos de texto!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(dni)) {
+                    Toast.makeText(getApplicationContext(), "Por favor complete los campos de texto!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Introduzca su dirección de correo electrónico!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Por favor complete los campos de texto!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Introducir la contraseña!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Por favor complete los campos de texto!", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+
 
                 if (password.length() < 6) {
                     Toast.makeText(getApplicationContext(), "Contraseña demasiado corta, ingrese un mínimo de 6 caracteres!", Toast.LENGTH_SHORT).show();

@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "335574420385",
-    "firebase_url": "https://test-556cd.firebaseio.com",
-    "project_id": "test-556cd",
-    "storage_bucket": "test-556cd.appspot.com"
+    "project_number": "155534858253",
+    "firebase_url": "https://hiro-app-29832.firebaseio.com",
+    "project_id": "hiro-app-29832",
+    "storage_bucket": "hiro-app-29832.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:335574420385:android:e72d23a18ddaadba",
+        "mobilesdk_app_id": "1:155534858253:android:b26243e350d04c14",
         "android_client_info": {
-          "package_name": "com.test.android"
+          "package_name": "com.HiroApp.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "335574420385-qlvhqvj8g7cdob7qbn5oolrrn4m2tdcl.apps.googleusercontent.com",
+          "client_id": "155534858253-rfjktogtui5hr50t85ekva0on9ndh6jt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.HiroApp.android",
+            "certificate_hash": "40907d651dea3647f361ee8291f5623647dacea5"
+          }
+        },
+        {
+          "client_id": "155534858253-thcdglgnitterrlqqur0aomps7768vlq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBUSooOlKU8lDbdD--gJ4kKcAoYnfmT6Ls"
+          "current_key": "AIzaSyDLXMNkiwrX_CRIuv5U0cHDwa4qSI__910"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155534858253-thcdglgnitterrlqqur0aomps7768vlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
