@@ -7,6 +7,7 @@
 /build
 /captures
 .externalNativeBuild
+/app/google-services.json
 
 # IntelliJ
 *.iml
