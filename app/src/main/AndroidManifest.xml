@@ -30,7 +30,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Splash.SplashActivity"
+            android:name=".MainActivity"
             android:theme="@style/SpeedyBrandTheme"
             android:launchMode="singleTask">
             <intent-filter>
@@ -46,7 +46,7 @@
             android:label="@string/title_activity_maps"></activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash.SplashActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -54,38 +54,6 @@
             android:name=".Splash.WelcomeActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".Login.SignupActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".Login.ResetPasswordActivity"
-            android:label="@string/title_activity_reset_password"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <activity
-            android:name=".Login.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-
-        <service
-            android:name=".FirebaseMessagingService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-
-
-        <service
-            android:name=".Alerta">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-
 
 
     </application>
