@@ -4,18 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gra_white">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/back_splash"
-        android:scaleType="centerCrop"
-        android:alpha="0.3"/>
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/splash" />
+ 
 
     <com.pixplicity.fontview.FontAppCompatTextView
         style="@style/FontTextViewStyle"

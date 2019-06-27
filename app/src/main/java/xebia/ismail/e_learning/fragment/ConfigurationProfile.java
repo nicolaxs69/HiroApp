@@ -39,7 +39,7 @@ public class ConfigurationProfile extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        //View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
 //        Toolbar toolbar = getView().findViewById(R.id.toolbar);
 //        toolbar.setTitle(getString(R.string.app_name));
@@ -68,11 +68,11 @@ public class ConfigurationProfile extends Fragment {
         //btnChangePassword = view. findViewById(R.id.change_password_button);
        // btnSendResetEmail = getView().findViewById(R.id.sending_pass_reset_button);
        // btnRemoveUser = getView().findViewById(R.id.remove_user_button);
-        changeEmail = view.findViewById(R.id.changeEmail);
-        //changePassword = view.findViewById(R.id.changePass);
-        sendEmail = view.findViewById(R.id.send);
-       // remove = getView().findViewById(R.id.remove);
-        signOut = view.findViewById(R.id.sign_out);
+//        changeEmail = view.findViewById(R.id.changeEmail);
+//        //changePassword = view.findViewById(R.id.changePass);
+//        sendEmail = view.findViewById(R.id.send);
+//       // remove = getView().findViewById(R.id.remove);
+//        signOut = view.findViewById(R.id.sign_out);
 
         //oldEmail = view.findViewById(R.id.old_email);
         //newEmail = view.findViewById(R.id.new_email);
@@ -88,7 +88,7 @@ public class ConfigurationProfile extends Fragment {
         sendEmail.setVisibility(View.GONE);
         //remove.setVisibility(View.GONE);
 
-        progressBar = view. findViewById(R.id.progressBar);
+        //progressBar = view. findViewById(R.id.progressBar);
 
         if (progressBar != null) {
             progressBar.setVisibility(View.GONE);
@@ -252,7 +252,7 @@ public class ConfigurationProfile extends Fragment {
             }
         });
 
-        return view;
+        return null;
     }
 
     //sign out method

@@ -31,7 +31,6 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/SpeedyBrandTheme"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,11 +39,6 @@
         </activity>
 
         <activity android:name=".AboutActivity" />
-
-        <activity
-            android:name=".Splash.SplashActivity"
-            android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar" />
 
 
     </application>

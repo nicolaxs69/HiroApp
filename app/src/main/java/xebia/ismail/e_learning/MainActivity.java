@@ -23,12 +23,6 @@ import android.widget.LinearLayout;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
-import xebia.ismail.e_learning.fragment.ConfigurationProfile;
-import xebia.ismail.e_learning.fragment.HomeFragment;
-import xebia.ismail.e_learning.fragment.MapsActivity;
-import xebia.ismail.e_learning.fragment.TabProfile;
-import xebia.ismail.e_learning.fragment.VolumeFragment;
-
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -132,7 +126,7 @@ public class MainActivity extends AppCompatActivity
                 
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home);
-                navFragment = new MapsActivity();
+                //navFragment = new MapsActivity();
                 break;
 
                 case R.id.nav_2:
@@ -141,7 +135,7 @@ public class MainActivity extends AppCompatActivity
                 
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_reward);
-                navFragment = new VolumeFragment();
+//                navFragment = new VolumeFragment();
                 break;
 
             case R.id.nav_3:
@@ -149,7 +143,7 @@ public class MainActivity extends AppCompatActivity
                 name = "telefonos de emergencia";
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home2);
-                navFragment = new HomeFragment();
+                //navFragment = new HomeFragment();
 
                 break;
 
@@ -158,18 +152,18 @@ public class MainActivity extends AppCompatActivity
                 name = "Mi perfil";
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home3);
-                navFragment = new TabProfile();
+                //navFragment = new TabProfile();
                 break;
 
 
             case R.id.nav_5:
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home4);
-                navFragment = new ConfigurationProfile();
+                //navFragment = new ConfigurationProfile();
                 break;
 
             case R.id.nav_6:
-                startActivity(new Intent(this, AboutActivity.class));
+                //startActivity(new Intent(this, AboutActivity.class));
                 mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);
                 return;
         }
@@ -187,7 +181,7 @@ public class MainActivity extends AppCompatActivity
                 //setting jarak elevasi bayangan ketika menggunakan tabs
 
                 if (elevation != null) {
-                    params.topMargin = navFragment instanceof VolumeFragment ? dp(48) : 0;
+                    //params.topMargin = navFragment instanceof VolumeFragment ? dp(48) : 0;
 
                     Animation a = new Animation() {
                         @Override
