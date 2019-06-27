@@ -14,7 +14,6 @@ import android.widget.ProgressBar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import xebia.ismail.e_learning.Login.LoginActivity;
 import xebia.ismail.e_learning.R;
 
 /**
@@ -59,7 +58,7 @@ public class ConfigurationProfile extends Fragment {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                    //startActivity(new Intent(getActivity(), LoginActivity.class));
                     getActivity().finish();
                 }
             }
@@ -259,7 +258,7 @@ public class ConfigurationProfile extends Fragment {
     //sign out method
     public void signOut() {
         auth.signOut();
-        startActivity(new Intent(getActivity(), LoginActivity.class));
+        //startActivity(new Intent(getActivity(), LoginActivity.class));
         getActivity().finish();
     }
 

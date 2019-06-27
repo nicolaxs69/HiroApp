@@ -1,78 +1,37 @@
 package xebia.ismail.e_learning;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentSender;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStates;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.messaging.FirebaseMessaging;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-import xebia.ismail.e_learning.Classes.Ubicacion;
-import xebia.ismail.e_learning.Classes.UpdateHelper;
 import xebia.ismail.e_learning.fragment.ConfigurationProfile;
 import xebia.ismail.e_learning.fragment.HomeFragment;
 import xebia.ismail.e_learning.fragment.MapsActivity;
 import xebia.ismail.e_learning.fragment.TabProfile;
 import xebia.ismail.e_learning.fragment.VolumeFragment;
 
-import static android.Manifest.permission.ACCESS_FINE_LOCATION;
-
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, UpdateHelper.OnUpdateCheckListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener  {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
 
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -86,36 +45,6 @@ public class MainActivity extends AppCompatActivity
     private Context mContext;
     private String id;
     private String name;
-    private final int MY_PERMISSIONS_REQUEST_FINE_LOCATION = 111;
-    private GoogleApiClient mGoogleApiClient;
-            private LocationRequest mLocationRequest;
-    private LocationListener listener;
-    private LatLng currentLatLng;
-    public static Handler handlerDatos;
-
-    private static final LatLng punto1 = new LatLng(-12.072941, -77.165595);
-    private static final LatLng punto2 = new LatLng(-12.072201, -77.164656);
-    private static final LatLng punto3 = new LatLng(-12.071755, -77.164603);
-    private static final LatLng punto4 = new LatLng(-12.072967, -77.163589);
-    private static final LatLng punto5 = new LatLng(-12.073743, -77.163599);
-    private static final LatLng punto6 = new LatLng(-12.073198, -77.162178);
-    private static final LatLng punto7 = new LatLng(-12.073040, -77.162328);
-    private static final LatLng punto8 = new LatLng(-12.071897, -77.162151);
-    private static final LatLng punto9 = new LatLng(-12.071398, -77.162210);
-    private static final LatLng punto10 = new LatLng(-12.070365, -77.163127);
-    private static final LatLng punto11 = new LatLng(-12.069667, -77.163122);
-    private static final LatLng punto12 = new LatLng(-12.069290, -77.162366);
-    private static final LatLng punto13 = new LatLng(-12.069164, -77.162028);
-    private static final LatLng punto14 = new LatLng(-12.070407, -77.161894);
-    private static final LatLng punto15 = new LatLng(-12.069961, -77.161153);
-    private static final LatLng punto16 = new LatLng(-12.069562, -77.160681);
-    private static final LatLng punto17 = new LatLng(-12.068419, -77.160091);
-    private static final LatLng punto18 = new LatLng(-12.068980, -77.158611);
-    private static final LatLng punto19 = new LatLng(-12.073045, -77.167928);
-
-    List<Ubicacion> ubicaciones = new ArrayList<>();
-    Ubicacion ubicacion = new Ubicacion();
-
 
 
     @Override
@@ -123,17 +52,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awal);
         mContext = getApplicationContext();
-
-        UpdateHelper.with(this)
-                .onUpdateCheck(this)
-                .check();
-
-        //PASO 2. Ejecuto el hilo que recibe el mensaje de la peticion GPS
-        //mThread.run();
-
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        FirebaseMessaging.getInstance().subscribeToTopic("NEWYORK_WEATHER");
-        FirebaseMessaging.getInstance().subscribeToTopic("Alerta");
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -185,294 +103,10 @@ public class MainActivity extends AppCompatActivity
                 mDrawerLayout.closeDrawers();
         }
 
-        //GPS PARTE
-        listener = new LocationListener() {
-            @SuppressLint("MissingPermission")
-            @Override
-            public void onLocationChanged(Location location) {
-                //txtOutput.setText("Lattitude:" + Double.toString(location.getLatitude()) + "\n Longitude: " + Double.toString(location.getLongitude()));
-                //LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, listener);
-                currentLatLng = new LatLng(location.getLatitude(), location.getLongitude());
-                showDistance2(ubicaciones);
-
-            }
-        };
-        initElements();
-
-        // Check for permisson Android 6.0 Marshmellow API 23
-        if (ContextCompat.checkSelfPermission(MainActivity.this,
-                ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                    this, // Activity
-                    new String[]{ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_FINE_LOCATION);
-        }
-
-                    handlerDatos = new Handler() {
-                @SuppressLint("MissingPermission")
-                @Override
-                public void handleMessage(Message msg) {
-                    super.handleMessage(msg);
-                    handlerDatos.obtainMessage();
-
-                    if (msg.getData().getString("data") == "Send GPS Coordinates") {
-                        // Ejecutar metodos y enviar resultados al servicio
-                        EnableGPSAutoMatically();
-                        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, listener);
-
-                    }
-                }
-            };
 
     }
 
-    private void initElements() {
 
-        //Gps Google init
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this, 0, this)
-                .addApi(LocationServices.API)
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .build();
-
-        // Check if the GPS is turn on
-        final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            //toast("GPS is not on");
-            //EnableGPSAutoMatically();
-        }
-
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto1);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto2);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto3);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto4);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto5);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto6);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto7);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto8);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto10);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto11);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto12);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto13);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto14);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto15);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto16);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto17);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto18);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-        ubicacion.setLatitudLongitud(punto19);
-        ubicaciones.add(ubicacion);
-        ubicacion = new Ubicacion();
-    }
-
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
-        mLocationRequest = LocationRequest.create();
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(10); // Update location every second
-        mLocationRequest.setNumUpdates(1);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        // Connect the client.
-        mGoogleApiClient.connect();
-    }
-
-    @Override
-    protected void onStop() {
-        // Disconnecting the client invalidates it.
-        //mGoogleApiClient.disconnect();
-        super.onStop();
-    }
-
-
-    @Override
-    public void onConnectionSuspended(int i) {
-    }
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-    }
-
-
-    //PASO 2. Handler que escucha las peticiones de prender GPS
-
-//    public class MyThreadListen extends Thread {
-//        @Override
-//        public void run() {
-//            android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_MORE_FAVORABLE);
-//            android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND);
-//            //Looper.prepare();
-//
-//            handlerDatos = new Handler() {
-//                @SuppressLint("MissingPermission")
-//                @Override
-//                public void handleMessage(Message msg) {
-//                    super.handleMessage(msg);
-//                    handlerDatos.obtainMessage();
-//
-//                    if (msg.getData().getString("data") == "Send GPS Coordinates") {
-//                        // Ejecutar metodos y enviar resultados al servicio
-//                        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, listener);
-//                        EnableGPSAutoMatically();
-//
-//                    }
-//                }
-//            };
-//
-//            //Looper.loop();
-//        }
-//    }
-//    MyThreadListen mThread = new MyThreadListen();
-
-
-    // Ejecuto hablitar el GPS y habilitar los permisos y envio las coordenadas al hilo de firebaseService
-
-    public void showDistance2(List<Ubicacion> ubicacionList) {
-        Double meters=new Double(0D);
-
-        for (int i = 0; i < ubicacionList.size(); i++) {
-            Location locationA = new Location("Location A");
-            locationA.setLatitude(ubicacionList.get(i).getLatitudLongitud().latitude);
-            locationA.setLongitude(ubicacionList.get(i).getLatitudLongitud().longitude);
-            Location locationB = new Location("Location B");
-            locationB.setLatitude(currentLatLng.latitude);
-            locationB.setLongitude(currentLatLng.longitude);
-            meters = Double.parseDouble(new DecimalFormat("##.##").format(locationA.distanceTo(locationB)));
-            ubicacionList.get(i).setDistancia(meters);
-            meters=new Double(0D);
-        }
-
-        // The lower value and return the GPS Coordenades
-        Collections.sort(ubicacionList, new Comparator<Ubicacion>() {
-            @Override
-            public int compare(Ubicacion obj1, Ubicacion obj2) {
-                return Double.compare(obj1.getDistancia(), obj2.getDistancia());
-            }
-        });
-
-        // Catch the Lattitude and the Longuitude
-       final String latLong = new String(String.valueOf(ubicaciones.get(0).getLatitudLongitud()));
-        String lat = latLong.substring(10, 19);
-        String lon = latLong.substring(20, 29);
-
-        Log.d("LattitudeLonguitude",latLong);
-
-        new Thread(new Runnable() {
-            public void run() {
-                Looper.prepare();
-                Message dataToSend2 = sendBundle(latLong);
-                if (FirebaseMessagingService.handlerDatos != null) {
-                    FirebaseMessagingService.handlerDatos.sendMessage(dataToSend2);
-                }
-                Looper.loop();
-            }
-        }).start();
-
-
-//        Log.d("Ubicacion mas cercana", String.valueOf(ubicaciones.get(0).getLatitudLongitud()));
-//        txtOutput.setText( "La Ubicacion mas cercana se encuentras en las Coordenadas: "+ lat +","+ lon +
-//                " a " +String.valueOf(ubicaciones.get(0).getDistancia())+" de distancia");
-    }
-
-    public void EnableGPSAutoMatically() {
-
-        GoogleApiClient googleApiClient = null;
-        if (googleApiClient == null) {
-            googleApiClient = new GoogleApiClient.Builder(this)
-                    .addApi(LocationServices.API).addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this).build();
-            googleApiClient.connect();
-            LocationRequest locationRequest = LocationRequest.create();
-            locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-            locationRequest.setInterval(30 * 1000);
-            locationRequest.setFastestInterval(5 * 1000);
-            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
-                    .addLocationRequest(locationRequest);
-
-            // **************************
-            builder.setAlwaysShow(true); // this is the key ingredient
-            // **************************
-
-            PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi
-                    .checkLocationSettings(googleApiClient, builder.build());
-            result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
-                @Override
-                public void onResult(LocationSettingsResult result) {
-                    final Status status = result.getStatus();
-                    final LocationSettingsStates state = result
-                            .getLocationSettingsStates();
-                    switch (status.getStatusCode()) {
-                        case LocationSettingsStatusCodes.SUCCESS:
-                            //LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, listener);
-                            //toast("Success");
-                            // All location settings are satisfied. The client can
-                            // initialize location
-                            // requests here.
-                            break;
-                        case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
-                            //toast("GPS is not on");
-                            // Location settings are not satisfied. But could be
-                            // fixed by showing the user
-                            // a dialog.
-                            try {
-                                // Show the dialog by calling
-                                // startResolutionForResult(),
-                                // and check the result in onActivityResult().
-                                status.startResolutionForResult(MainActivity.this, 1000);
-
-                            } catch (IntentSender.SendIntentException e) {
-                                // Ignore the error.
-                            }
-                            break;
-                        case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
-                           // toast("Setting change not allowed");
-                            // Location settings are not satisfied. However, we have
-                            // no way to fix the
-                            // settings so we won't show the dialog.
-                            break;
-                    }
-                }
-            });
-        }
-    }
     public void switchFragment(int itemId) {
         mSelectedId = mNavigationView.getMenu().getItem(itemId).getItemId();
         mNavigationView.getMenu().findItem(mSelectedId).setChecked(true);
@@ -495,7 +129,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_1:
                 id = "1";
                 name = "Zonas Seguras";
-                AnalyticsEvent(id,name);
+                
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home);
                 navFragment = new MapsActivity();
@@ -504,7 +138,7 @@ public class MainActivity extends AppCompatActivity
                 case R.id.nav_2:
                 id = "2";
                 name = "Mochila de emergencia";
-                AnalyticsEvent(id,name);
+                
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_reward);
                 navFragment = new VolumeFragment();
@@ -513,7 +147,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_3:
                 id = "3";
                 name = "telefonos de emergencia";
-                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home2);
                 navFragment = new HomeFragment();
@@ -523,7 +156,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_4:
                 id = "3";
                 name = "Mi perfil";
-                AnalyticsEvent(id,name);
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home3);
                 navFragment = new TabProfile();
@@ -614,31 +246,5 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-    @Override
-    public void onUpdateCheckListener(final String urlApp) {
 
-        AlertDialog alertDialog = new AlertDialog.Builder(this)
-                .setTitle("Hay una nueva versión  disponible")
-                .setMessage("Por favor actualice a la nueva versión para continuar")
-                .setPositiveButton("ACTUALIZAR", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this, ""+urlApp, Toast.LENGTH_SHORT).show();
-                    }
-                }).setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.dismiss();
-                    }
-                }).create();
-        alertDialog.show();
-
-    }
-    private Message sendBundle(String mensaje) {
-        Message dataToSend = Message.obtain();
-        Bundle bundle = new Bundle();
-        bundle.putString("data", mensaje);
-        dataToSend.setData(bundle);
-        return dataToSend;
-    }
 }
