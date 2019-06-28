@@ -1,0 +1,19 @@
+
+Tsquid:S19056"1Remove this unnecessary cast to "NavigationView".(ÆşœÀúÿÿÿÿ8³—ëÚ¹-
+lsquid:S00100Ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛÚÁùÿÿÿÿ
+xsquid:S00116 "[Rename this field "SELECTED_ITEM_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™¹ŒËùÿÿÿÿ
+Hsquid:S19053"*Remove this unnecessary cast to "Toolbar".(Å×î8³—ëÚ¹-
+nsquid:S1450&"WRemove the "mToolbar" field and declare it as a local variable in the relevant methods.(êˆ‹©
+Fsquid:S1068)"(Remove this unused "name" private field.(Ë¥¼8ˆ²òØ¹-
+hsquid:S1450("QRemove the "id" field and declare it as a local variable in the relevant methods.(æ¨ç†
+esquid:UnusedPrivateMethodÇ"3Remove this unused private "AnalyticsEvent" method.(ÛÚÁùÿÿÿÿ8‡²òØ¹-
+Hsquid:S1068'",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ
+jsquid:S1450)"SRemove the "name" field and declare it as a local variable in the relevant methods.(Ë¥¼
+Rsquid:S19052"/Remove this unnecessary cast to "DrawerLayout".(æ¦È´üÿÿÿÿ8³—ëÚ¹-
+asquid:CallToDeprecatedMethodI"9Remove this use of "setDrawerListener"; it is deprecated.(îÓ“ş
+=squid:S1170 "!Make this final field static too.(™¹ŒËùÿÿÿÿ
+csquid:S2583®"DChange this condition so that it does not always evaluate to "false"(ë•Å„8îåíÚ¹-
+Gsquid:S00108Ã")Either remove or fill this block of code.(•ôíßÿÿÿÿÿ
+P"squid:SwitchLastCaseIsDefaultChecky""Add a default case to this switch.(¦¦¢†
+Dsquid:S1068("&Remove this unused "id" private field.(æ¨ç†8³—ëÚ¹-
+ssquid:S1450'"WRemove the "mContext" field and declare it as a local variable in the relevant methods.(»úÅ¾øÿÿÿÿ

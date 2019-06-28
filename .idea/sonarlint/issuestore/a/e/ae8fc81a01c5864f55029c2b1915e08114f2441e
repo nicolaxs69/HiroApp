@@ -1,32 +1,28 @@
 
-osquid:S1450"XRemove the "sendEmail" field and declare it as a local variable in the relevant methods.(ç§—
-Hsquid:S1068"1Remove this unused "btnRemoveUser" private field.(ŒùÁÌ
-Asquid:S1068"*Remove this unused "remove" private field.(ç§—
-Esquid:S1185‹"(Remove this method to simply inherit it.(µ‚µõıÿÿÿÿ
-<squid:S1659"%Declare "signOut" on a separate line.(ç§—
-Bsquid:S1659"+Declare "btnRemoveUser" on a separate line.(ŒùÁÌ
-Esquid:S14814")Remove this unused "user" local variable.(Æ½ì›ûÿÿÿÿ
-=squid:S1659"&Declare "password" on a separate line.(£¨Ï
-Lsquid:S1068"5Remove this unused "btnChangePassword" private field.(ŒùÁÌ
-Csquid:S1068",Remove this unused "newEmail" private field.(£¨Ï
-Fsquid:S1659"/Declare "btnChangePassword" on a separate line.(ŒùÁÌ
-Fsquid:S1659"/Declare "btnSendResetEmail" on a separate line.(ŒùÁÌ
-Csquid:S1659",Declare "changePassword" on a separate line.(ç§—
-Lsquid:S1068"5Remove this unused "btnSendResetEmail" private field.(ŒùÁÌ
-Csquid:S1068",Remove this unused "oldEmail" private field.(£¨Ï
-@squid:S1659")Declare "changeEmail" on a separate line.(ç§—
-Isquid:S1068"2Remove this unused "btnChangeEmail" private field.(ŒùÁÌ
 Fsquid:S1068"/Remove this unused "newPassword" private field.(£¨Ï
->squid:S1659"'Declare "sendEmail" on a separate line.(ç§—
+Hsquid:S1068"1Remove this unused "btnRemoveUser" private field.(ŒùÁÌ
+Bsquid:S1659"+Declare "btnRemoveUser" on a separate line.(ŒùÁÌ
+Fsquid:S1659"/Declare "btnChangePassword" on a separate line.(ŒùÁÌ
 =squid:S1659"&Declare "newEmail" on a separate line.(£¨Ï
-;squid:S1659"$Declare "remove" on a separate line.(ç§—
-Lsquid:S1068"0Remove this unused "authListener" private field.(ğÏÿŸøÿÿÿÿ
-qsquid:S1450"ZRemove the "changeEmail" field and declare it as a local variable in the relevant methods.(ç§—
-Esquid:S1185•"(Remove this method to simply inherit it.(º£”úÿÿÿÿ
+>squid:S1659"'Declare "sendEmail" on a separate line.(ç§—
+Asquid:S1068"*Remove this unused "remove" private field.(ç§—
+@squid:S1659")Declare "newPassword" on a separate line.(£¨Ï
+=squid:S1659"&Declare "password" on a separate line.(£¨Ï
 @squid:S1185"(Remove this method to simply inherit it.(öÿÕÅ
-Csquid:S1068",Remove this unused "password" private field.(£¨Ï
-msquid:S1450"VRemove the "signOut" field and declare it as a local variable in the relevant methods.(ç§—
+Fsquid:S1659"/Declare "btnSendResetEmail" on a separate line.(ŒùÁÌ
+Isquid:S1068"2Remove this unused "btnChangeEmail" private field.(ŒùÁÌ
 Isquid:S1068"2Remove this unused "changePassword" private field.(ç§—
 wsquid:S1450"[Remove the "authListener" field and declare it as a local variable in the relevant methods.(ğÏÿŸøÿÿÿÿ
-vsquid:S1450"ZRemove the "progressBar" field and declare it as a local variable in the relevant methods.(â˜ˆçøÿÿÿÿ
-@squid:S1659")Declare "newPassword" on a separate line.(£¨Ï
+Csquid:S1659",Declare "changePassword" on a separate line.(ç§—
+Lsquid:S1068"0Remove this unused "authListener" private field.(ğÏÿŸøÿÿÿÿ
+Lsquid:S1068"5Remove this unused "btnSendResetEmail" private field.(ŒùÁÌ
+;squid:S1659"$Declare "remove" on a separate line.(ç§—
+Esquid:S14814")Remove this unused "user" local variable.(Æ½ì›ûÿÿÿÿ
+@squid:S1659")Declare "changeEmail" on a separate line.(ç§—
+Lsquid:S1068"5Remove this unused "btnChangePassword" private field.(ŒùÁÌ
+Csquid:S1068",Remove this unused "password" private field.(£¨Ï
+Csquid:S1068",Remove this unused "newEmail" private field.(£¨Ï
+Esquid:S1185•"(Remove this method to simply inherit it.(º£”úÿÿÿÿ
+Esquid:S1185‹"(Remove this method to simply inherit it.(µ‚µõıÿÿÿÿ
+<squid:S1659"%Declare "signOut" on a separate line.(ç§—
+Csquid:S1068",Remove this unused "oldEmail" private field.(£¨Ï
